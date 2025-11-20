@@ -7,7 +7,7 @@ class MenuView:
         print("3. Sair")
 
         try:
-            return int(input("Escolha uma opção: "))
+            return int(input("\nEscolha uma opção: "))
         except ValueError:
             print("\nEntrada inválida. Digite um número.\n")
             return -1
