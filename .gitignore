@@ -1,0 +1,76 @@
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# C extensions
+*.so
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+
+# Distribution / packaging
+build/
+dist/
+develop-eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Banco de dados local (caso use SQLite)
+*.sqlite3
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+
+# Ferramentas
+.mypy_cache/
+.pytest_cache/
+.pdm.toml
+poetry.lock
+poetry.toml
+
+# Django / Flask (caso alguém use)
+*.mo
+*.pot
+
+# Arquivos sensíveis
+.env
+*.env
