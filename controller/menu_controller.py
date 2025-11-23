@@ -1,8 +1,10 @@
 from view.menu_view import MenuView
+from controller.livro_controller import LivroController
 
 class MenuController:
     def __init__(self):
         self.view = MenuView()
+        self.livro_controller = LivroController()
         
     def executar(self):
         while True:
@@ -12,7 +14,7 @@ class MenuController:
                 pass
 
             elif opcao == 2:
-                pass
+                self.livro_controller.executar()
 
             elif opcao == 3:
                 self.view.mensagem("\nSaindo do sistema...\n")
