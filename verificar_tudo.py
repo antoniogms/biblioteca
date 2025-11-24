@@ -1,5 +1,5 @@
 import os
-print("🔍 VERIFICANDO TODOS OS ARQUIVOS...")
+print("VERIFICANDO TODOS OS ARQUIVOS...")
 print("=" * 40)
 
 # Verificar se todos os arquivos existem
@@ -18,9 +18,9 @@ arquivos_necessarios = [
 
 for arquivo in arquivos_necessarios:
     if os.path.exists(arquivo):
-        print(f"✅ {arquivo}")
+        print(f"{arquivo}")
     else:
-        print(f"❌ {arquivo} - FALTANDO!")
+        print(f"{arquivo} - FALTANDO!")
 
 print("\n🧪 TESTANDO IMPORTS...")
 
@@ -34,8 +34,9 @@ try:
     from views.autor_view import AutorView
     from views.livro_view import LivroView
     from main import BibliotecaApp
-    print("✅ TODOS OS IMPORTS OK!")
+    print("TODOS OS IMPORTS OK!")
 except Exception as e:
-    print(f"❌ ERRO NOS IMPORTS: {e}")
+    print(f"ERRO NOS IMPORTS: {e}")
 
-print("\n🎯 PRONTO PARA EXECUTAR!")
+print("\nPRONTO PARA EXECUTAR!")
+
