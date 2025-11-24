@@ -1,4 +1,4 @@
-print("🎯 TESTE COMPLETO DO SISTEMA")
+print("TESTE COMPLETO DO SISTEMA")
 print("=" * 40)
 
 # Testar cada parte do sistema
@@ -8,10 +8,10 @@ try:
     db = Database()
     conn = db.connect()
     if conn:
-        print("✅ Database: OK")
+        print("Database: OK")
         db.disconnect()
     else:
-        print("❌ Database: FALHOU")
+        print("Database: FALHOU")
         exit()
 
     # 2. Testar modelos
@@ -20,7 +20,7 @@ try:
 
     autor_model = AutorModel()
     livro_model = LivroModel()
-    print("✅ Models: OK")
+    print("Models: OK")
 
     # 3. Testar controllers
     from controllers.autor_controller import AutorController
@@ -28,7 +28,7 @@ try:
 
     autor_controller = AutorController()
     livro_controller = LivroController()
-    print("✅ Controllers: OK")
+    print("Controllers: OK")
 
     # 4. Testar views
     from views.autor_view import AutorView
@@ -38,17 +38,18 @@ try:
     autor_view = AutorView()
     livro_view = LivroView()
     menu_view = MenuView()
-    print("✅ Views: OK")
+    print("Views: OK")
 
     # 5. Testar listagens
     autores = autor_controller.listar_autores()
     livros = livro_controller.listar_livros()
 
-    print(f"✅ Autores no banco: {len(autores)}")
-    print(f"✅ Livros no banco: {len(livros)}")
+    print(f"Autores no banco: {len(autores)}")
+    print(f"Livros no banco: {len(livros)}")
 
-    print("\n🎉 SISTEMA COMPLETO FUNCIONANDO!")
-    print("👉 Agora execute: python main.py")
+    print("\nSISTEMA COMPLETO FUNCIONANDO!")
+    print("Agora execute: python main.py")
 
 except Exception as e:
-    print(f"❌ ERRO NO TESTE: {e}")
+    print(f"ERRO NO TESTE: {e}")
+
