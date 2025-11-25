@@ -1,7 +1,7 @@
 class MenuView:
     @staticmethod
     def menu():
-        print("\n--------- MENU PRINICIPAL ---------\n")
+        print("\n--------- MENU PRINCIPAL ---------\n")
         print("1. Gerenciar autor")
         print("2. Gerenciar livro")
         print("3. Sair")
